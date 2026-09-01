@@ -6,12 +6,12 @@ The SAT is fully digital, taken in College Board's **Bluebook** application on a
 
 | Section | Time | Questions | Per module |
 |---------|------|-----------|------------|
-| Reading & Writing | 64 min | 54 | 2 modules of 32 min, ~27 questions each |
-| Math | 70 min | 44 | 2 modules of 35 min, ~22 questions each |
+| Reading & Writing | 64 min | 54 | 2 modules of 32 min, **27 questions each** (25 operational + 2 pretest) |
+| Math | 70 min | 44 | 2 modules of 35 min, **22 questions each** (20 operational + 2 pretest) |
 
 - A **10-minute break** separates the two sections.
 - Total sitting: about **2 hours 14 minutes**, **98 questions**.
-- A small number of questions are unscored **pretest** items mixed in; students cannot tell which, so treat every question as scored.
+- Each module carries **2 embedded pretest questions** — unscored items the College Board is trialling. So of the 98, **90 are operational (scored)** and 8 are pretest. Students cannot tell which are which, so treat every question as scored.
 
 ## Pacing (know these cold)
 

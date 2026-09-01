@@ -1,6 +1,6 @@
 # Digital SAT — Reading & Writing
 
-64 minutes, 54 questions, two 32-minute modules. **No calculator.** About **71 seconds** per question.
+64 minutes, 54 questions, two 32-minute modules of **27 questions each** (25 operational + 2 unscored pretest). **No calculator.** About **71 seconds** per question.
 
 ## The format that surprises students
 

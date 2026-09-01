@@ -1,6 +1,6 @@
 # Digital SAT — Math
 
-70 minutes, 44 questions, two 35-minute modules. About **95 seconds** per question. A calculator is allowed on the **entire** section.
+70 minutes, 44 questions, two 35-minute modules of **22 questions each** (20 operational + 2 unscored pretest). About **95 seconds** per question. A calculator is allowed on the **entire** section.
 
 ## Question formats
 
