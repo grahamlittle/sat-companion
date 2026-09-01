@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setup — Claude Code &middot; SAT Companion</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <span class="brand">SAT<b> Companion</b></span>
+  <a class="back" href="index.html">&larr; All setup paths</a>
+</div></div>
+<main>
+<span class="eyebrow">Setup &middot; Drop-in folder</span>
+<h1>Claude Code (CLI or desktop app)</h1>
+<p>This path installs SAT Companion as a native <strong>Skill</strong>. Claude Code loads it automatically whenever you ask a Digital SAT question.</p>
+
+<h2>Prerequisites</h2>
+<ul><li><strong>Claude Code</strong> installed (the CLI, or the Claude desktop/web app that supports skills).</li><li>Basic comfort with copying a folder into a directory.</li></ul>
+
+<h2>Install</h2>
+<ol>
+<li>Copy the <code>sat-companion/</code> folder (inside this bundle&rsquo;s <code>skill/</code> directory &mdash; it contains <code>SKILL.md</code> and a <code>references/</code> folder) into your skills directory:
+  <ul><li><strong>Personal skills (all projects):</strong> <code>~/.claude/skills/</code></li><li><strong>Project-only skill:</strong> <code>.claude/skills/</code> inside a specific project.</li></ul>
+  The result should look like:
+  <pre><code>~/.claude/skills/sat-companion/
+  SKILL.md
+  references/
+    test-structure.md
+    reading-writing.md
+    math.md
+    scoring-and-strategy.md</code></pre></li>
+<li>Start (or restart) Claude Code so it picks up the new skill.</li>
+<li>Test it: <em>&ldquo;Digital SAT Reading &amp; Writing &mdash; walk me through a Transitions question, don&rsquo;t just give the letter.&rdquo;</em> It should adopt the coach role and end with the <code>(SAT Companion &mdash; Last Updated: September 2026)</code> footer.</li>
+</ol>
+
+<h2>How it loads</h2>
+<p>You do <strong>not</strong> call the skill manually. <code>SKILL.md</code> has a description that tells Claude to invoke it for any Digital SAT question. The <code>references/</code> files load on demand &mdash; e.g. the Math reference only loads when you ask about Math &mdash; which keeps context lean.</p>
+
+<h2>Updating</h2>
+<p>Replace the folder with a newer version and restart. Everything is plain Markdown, so you can also edit <code>SKILL.md</code> or the references directly. Re-check satsuite.collegeboard.org if the College Board publishes a change, or run the <code>/update-sat-companion</code> skill.</p>
+<div class="crumbs"><span>Other setups:</span><a href="setup-claude.html">claude.ai</a><a href="setup-code.html" class="here">Claude Code</a><a href="setup-generic.html">ChatGPT / Gemini</a><a href="index.html">&larr; Home</a></div>
+</main>
+<footer>SAT Companion is an independent study aid, not affiliated with, endorsed by, or produced by the College Board. “SAT” and “College Board” are trademarks registered by the College Board. “Bluebook” and “Desmos” are trademarks of their respective owners.</footer>
+</body>
+</html>

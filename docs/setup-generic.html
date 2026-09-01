@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setup — ChatGPT, Gemini & others &middot; SAT Companion</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <span class="brand">SAT<b> Companion</b></span>
+  <a class="back" href="index.html">&larr; All setup paths</a>
+</div></div>
+<main>
+<span class="eyebrow">Setup &middot; Copy-paste</span>
+<h1>ChatGPT, Gemini, or any other AI</h1>
+<p>This path uses <strong>one self-contained file</strong>, <a href="https://github.com/grahamlittle/sat-companion/blob/main/generic/system-prompt.md" target="_blank" rel="noopener">system-prompt.md</a>. It bundles the coach instructions and all the reference material into a single block, because most general chat assistants cannot look separate files up.</p>
+
+<div class="callout">
+<h3>The honest trade-off</h3>
+<p><code>system-prompt.md</code> is fairly large (~15&nbsp;KB / ~2,400 words). That matters:</p>
+<ul>
+<li><strong>Small &ldquo;custom instructions&rdquo; boxes will reject it.</strong> Do <strong>not</strong> paste it there.</li>
+<li><strong>Paste it as your first message</strong> in a normal chat, then send your real question next. The AI keeps it in context for that conversation.</li>
+<li>Re-paste it in each <strong>new</strong> chat, unless your tool has a &ldquo;custom GPT&rdquo;, &ldquo;Gem&rdquo;, or saved-prompt feature &mdash; put it there once.</li>
+</ul>
+<p>If your tool supports uploadable knowledge files (like claude.ai Projects), prefer the <a href="setup-claude.html">claude.ai path</a> &mdash; it is lighter and you do not re-paste anything.</p>
+</div>
+
+<h2>Steps</h2>
+<ol>
+<li>Open a new chat in your AI tool.</li>
+<li>Open <a href="https://github.com/grahamlittle/sat-companion/blob/main/generic/system-prompt.md" target="_blank" rel="noopener">system-prompt.md</a>, copy the <strong>entire</strong> contents, and paste it as your first message. The AI should acknowledge it is now SAT Companion.</li>
+<li>Send your real question next: <em>&ldquo;Digital SAT Math. Here&rsquo;s a question I got wrong and the answer I picked &mdash; help me find my mistake.&rdquo;</em></li>
+<li>Check it behaves: it should ask for your attempt or reasoning before explaining, name the content domain, and end with <code>(SAT Companion &mdash; Last Updated: September 2026)</code>.</li>
+</ol>
+
+<h2>Reducing size (optional)</h2>
+<p>If your tool truncates long messages, trim <code>system-prompt.md</code>: keep the top instructions and only the reference sections you need. A student focused only on Math can delete the Reading &amp; Writing detail. Reference sections are marked with <code>## REFERENCE:</code> headers.</p>
+<div class="crumbs"><span>Other setups:</span><a href="setup-claude.html">claude.ai</a><a href="setup-code.html">Claude Code</a><a href="setup-generic.html" class="here">ChatGPT / Gemini</a><a href="index.html">&larr; Home</a></div>
+</main>
+<footer>SAT Companion is an independent study aid, not affiliated with, endorsed by, or produced by the College Board. “SAT” and “College Board” are trademarks registered by the College Board. “Bluebook” and “Desmos” are trademarks of their respective owners.</footer>
+</body>
+</html>

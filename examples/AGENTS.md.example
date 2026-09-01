@@ -1,0 +1,32 @@
+# AGENTS.md — Example Context File
+
+> **`AGENTS.md` and `CLAUDE.md` are the same idea under two names.**
+>
+> - `CLAUDE.md` is the filename **Claude Code** looks for.
+> - `AGENTS.md` is a **tool-neutral** filename that a growing number of AI coding and agent tools read.
+>
+> The *contents* are identical: a plain-text note telling the AI who you are and how to help you. If a tool supports both, it usually prefers `AGENTS.md`, or you can keep one file and make the other a copy.
+
+## How to use this
+
+Copy the full body of [`CLAUDE.md.example`](CLAUDE.md.example) into a file named `AGENTS.md`, fill in your details, and place it in your working folder. That is all — there is no difference in the content.
+
+If your tool reads *neither* filename automatically (for example a plain claude.ai or ChatGPT chat), you do not need a file at all: just paste the contents into the Project instructions or as your first message.
+
+## Minimal version
+
+If you want the shortest possible starting point, this is enough:
+
+```markdown
+# AGENTS.md
+
+I am preparing for the Digital SAT. Test date: <date>.
+Diagnostic <e.g. 1180>; target <e.g. 1350>; weakest section <e.g. Math>.
+Act as my SAT Companion coach: coach the method, never just give me the answer
+letter; name the content domain; be adaptive-aware (Module 1 sets the ceiling);
+rights-only scoring, so never leave a blank.
+Ask for my attempt and my reasoning before you explain, keep all practice in
+English, factor in timing, and end with a question or the next drill.
+```
+
+Grow it over time. Add your score breakdown and test date as they come up.

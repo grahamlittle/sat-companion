@@ -1,0 +1,67 @@
+/* SAT Companion — shared setup-page stylesheet */
+@font-face{font-family:'Fraunces';font-weight:600;font-style:normal;font-display:swap;src:url(fonts/fraunces-600.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-weight:600;font-style:italic;font-display:swap;src:url(fonts/fraunces-600-italic.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-weight:400;font-style:normal;font-display:swap;src:url(fonts/fraunces-400.woff2) format('woff2')}
+
+:root{
+  --bg:#ECE7DF; --fg:#201F26; --fg-soft:#5C5A66; --card:#F5F1E9; --line:#D6CDBD;
+  --accent:#B02A44; --accent-fg:#FBF5EF; --code-bg:#EDE6DA;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#12131A; --fg:#EDEAE2; --fg-soft:#A6A6B2; --card:#1C1F2B; --line:#2E3242;
+    --accent:#E4586E; --accent-fg:#12131A; --code-bg:#171923; }
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65;
+  -webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:var(--accent-fg)}
+
+.topbar{border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;
+  background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(8px)}
+.topbar .wrap{max-width:820px;margin:0 auto;padding:14px 24px;
+  display:flex;justify-content:space-between;align-items:center}
+.brand{font-weight:600;letter-spacing:.2px}
+.brand b{color:var(--accent);font-weight:600}
+.back{color:var(--fg-soft);font-size:14px;text-decoration:none}
+.back:hover{color:var(--accent)}
+
+main{max-width:760px;margin:0 auto;padding:46px 24px 70px}
+.eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:.14em;font-size:12px;
+  color:var(--accent);font-weight:700;margin-bottom:12px}
+h1,h2,h3{font-family:'Fraunces',"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  line-height:1.14;font-weight:600;text-wrap:balance}
+h1{font-size:clamp(30px,5vw,44px);margin:0 0 14px;letter-spacing:-.4px}
+h2{font-size:25px;margin:40px 0 12px}
+h3{font-size:19px;margin:22px 0 8px}
+p,li{font-size:16.5px}
+a{color:var(--accent)}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:"SF Mono",ui-monospace,"Cascadia Mono",Menlo,monospace;font-size:.86em;
+  background:var(--code-bg);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+pre{background:var(--code-bg);border:1px solid var(--line);border-radius:12px;
+  padding:16px 18px;overflow-x:auto;margin:16px 0}
+pre code{background:none;border:none;padding:0;font-size:13.5px;line-height:1.5}
+ol,ul{padding-left:22px}
+li{margin:7px 0}
+li ul,li ol{margin:7px 0}
+em{font-style:italic}
+hr{border:none;border-top:1px solid var(--line);margin:34px 0}
+
+.callout{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:10px;padding:6px 20px 16px;margin:24px 0}
+.callout h3{margin-top:16px}
+
+.crumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:44px;padding-top:22px;
+  border-top:1px solid var(--line);font-size:14px}
+.crumbs span{color:var(--fg-soft);margin-right:4px}
+.crumbs a{color:var(--fg-soft);text-decoration:none;border:1px solid var(--line);
+  border-radius:999px;padding:5px 13px}
+.crumbs a:hover{color:var(--accent);border-color:var(--accent);text-decoration:none}
+.crumbs a.here{color:var(--accent);border-color:var(--accent)}
+
+footer{max-width:760px;margin:0 auto;padding:26px 24px 60px;border-top:1px solid var(--line);
+  color:var(--fg-soft);font-size:12.5px;line-height:1.55}

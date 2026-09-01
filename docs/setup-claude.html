@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setup — claude.ai &middot; SAT Companion</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <span class="brand">SAT<b> Companion</b></span>
+  <a class="back" href="index.html">&larr; All setup paths</a>
+</div></div>
+<main>
+<span class="eyebrow">Setup &middot; Easiest &middot; ~5 min</span>
+<h1>claude.ai (Projects)</h1>
+<p>No installation. About five minutes. A <strong>Project</strong> on claude.ai is a saved workspace with its own instructions and knowledge files. We turn SAT Companion into a Project so every new chat inside it is already a Digital SAT coach.</p>
+
+<h2>Prerequisites</h2>
+<ul><li>A <strong>claude.ai</strong> account. Projects are available on paid plans (Pro/Team); check your plan if you do not see the Projects option.</li></ul>
+
+<h2>Steps</h2>
+<ol>
+<li>Open the sidebar and click <strong>Projects</strong>, then <strong>Create project</strong>. Name it <strong>SAT Companion</strong>.</li>
+<li>Open the project&rsquo;s <strong>Instructions</strong>. Copy the entire contents of <a href="https://github.com/grahamlittle/sat-companion/blob/main/claude-project/project-instructions.md" target="_blank" rel="noopener">project-instructions.md</a> and paste it in. Save.</li>
+<li>Add the reference material as <strong>knowledge</strong>. Upload these four files from the skill&rsquo;s <code>references/</code> folder:
+  <ul><li><code>test-structure.md</code></li><li><code>reading-writing.md</code></li><li><code>math.md</code></li><li><code>scoring-and-strategy.md</code></li></ul>
+  The instructions tell Claude to consult these by name, so the filenames must stay as-is.</li>
+<li>Start a new chat <strong>inside the project</strong> and test: <em>&ldquo;Digital SAT Math &mdash; here&rsquo;s a question I got wrong and the answer I picked. Help me find my mistake, don&rsquo;t just give the answer.&rdquo;</em> It should coach you and end with the <code>(SAT Companion &mdash; Last Updated: September 2026)</code> footer.</li>
+</ol>
+
+<h2>Tips for students</h2>
+<ul>
+<li>Always chat <strong>inside the project</strong> &mdash; chats started outside it will not have the coach set up.</li>
+<li>Paste a question you got wrong <em>and your reasoning</em> for the choice you made. The coach diagnoses the misconception, not just the answer.</li>
+<li>Tell it your test date, current or diagnostic score, and target up front &mdash; it tailors the plan to the gap.</li>
+</ul>
+
+<h2>Keeping it current</h2>
+<p>If the reference files are updated later, delete the old knowledge files and re-upload the new ones. Update the instructions only if <code>project-instructions.md</code> changes.</p>
+<div class="crumbs"><span>Other setups:</span><a href="setup-claude.html" class="here">claude.ai</a><a href="setup-code.html">Claude Code</a><a href="setup-generic.html">ChatGPT / Gemini</a><a href="index.html">&larr; Home</a></div>
+</main>
+<footer>SAT Companion is an independent study aid, not affiliated with, endorsed by, or produced by the College Board. “SAT” and “College Board” are trademarks registered by the College Board. “Bluebook” and “Desmos” are trademarks of their respective owners.</footer>
+</body>
+</html>
